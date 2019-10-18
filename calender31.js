@@ -1,3 +1,12 @@
+day31counter = -1
+
+
+
+let btn31Div1 = document.querySelector('[data-box31one]')
+let btn31Div2 = document.querySelector('[data-box31two]')
+let btn31Div3 = document.querySelector('[data-box31three]')
+let btn31Div4 = document.querySelector('[data-box31four]')
+
 
 let bttn31 = document.querySelector('[data-btn31]')
 bttn31.addEventListener('click', () => {

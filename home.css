@@ -1,0 +1,520 @@
+html {
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+body {
+    width: 100vw;
+}
+
+.divider {
+    width: 8rem;
+    height: 6px;
+    z-index: 9;
+    background-color: brown;
+    position: absolute;
+    top: 20rem;
+    border-radius: 10rem
+}
+
+.subheader {
+    z-index: 9;
+    color: white;
+    position: absolute;
+    top: 23rem;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.13rem;
+    width: 50vw;
+}
+
+.me {
+    height: 12rem;
+    width: 12rem;
+    transform: rotate(90deg);
+    border: 3px solid grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 8rem;
+}
+
+.carousel {
+    border: 2px solid black;
+}
+
+.carousel img {
+    max-height: 35rem;
+    image-rendering: optimizeQuality;
+    background-image:
+}
+
+.icon {
+    height: 2.3rem;
+    width: 2.3rem;
+    background-image: url("/images/logo1.png");
+    background-size: contain;
+    position: absolute;
+    left: 14.3rem;
+    top: 0.6rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-style: bold;
+    font-weight: bold;
+    position: absolute;
+    top: 0.1rem;
+    padding-top: 0;
+    left: 5.3rem;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+}
+
+.navbar-nav {
+    text-align: end;
+}
+
+
+.end {
+    color: orangered;
+    position: fixed;
+    top: 0.1rem;
+    left: 10.3rem;
+    ;
+    font-size: 2rem;
+    font-style: bold;
+    font-weight: bolder;
+    z-index: 9;
+    background: none;
+}
+
+.end:hover {
+    text-decoration: none;
+    color: orangered
+}
+
+.first-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(images/me2.JPG);
+    transform: rotate(90deg);
+    background-position: center;
+    background-size: 250px;
+    border: 5px solid rgb(90, 83, 83);
+    position: absolute;
+    top: 6rem;
+}
+
+.header {
+    font-size: 1.6em;
+    font-family: 'Satisfy', cursive;
+    color: rgba(255, 255, 255, 0.863);
+    z-index: 9;
+    position: absolute;
+    top: 18rem;
+}
+
+.heading {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30rem;
+    background-image: url(images/backg.jpg);
+    background-color: rgba(36, 35, 35, 0.39);
+    background-blend-mode: multiply;
+}
+
+.line {
+    background-color: rgb(42, 42, 53);
+    height: 1.2rem;
+    width: 100%;
+    position: absolute;
+    top: 30.01rem;
+}
+
+.main {
+    height: 2.5rem;
+    width: 2.5rem;
+    position: relative;
+    top: 0rem;
+    background-size: cover;
+    background-image: url(images/menu1.png);
+    left: 0;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.164);
+    border: 0;
+    border-radius: 50%
+}
+
+.a {
+    text-align: end;
+    color: white;
+    font-size: 1.2rem;
+    height: 2rem;
+    position: absolute;
+    top: 5.4rem;
+    font-family: cursive;
+    list-style: circle;
+}
+
+.b {
+    text-align: end;
+    color: white;
+    font-size: 1.2rem;
+    height: 2rem;
+    position: absolute;
+    top: 7.3rem;
+    font-family: cursive;
+    list-style: circle;
+}
+
+.c {
+    text-align: end;
+    color: white;
+    font-size: 1.2rem;
+    height: 2rem;
+    position: absolute;
+    top: 9.2rem;
+    font-family: cursive;
+    list-style: circle;
+}
+
+.a:hover {
+    background-color: rgba(193, 193, 226, 0.212);
+    transform: translateZ(0) translateX(-10%);
+    transition: transform 1s ease;
+    box-shadow: 0 0 2px 2px white
+}
+
+.b:hover {
+    background-color: rgba(193, 193, 226, 0.212);
+    transform: translateZ(0) translateX(-10%);
+    transition: transform 1s ease;
+    box-shadow: 0 0 2px 2px white
+}
+
+.c:hover {
+    background-color: rgba(193, 193, 226, 0.212);
+    transform: translateZ(0) translateX(-10%);
+    transition: transform 1s ease;
+    box-shadow: 0 0 2px 2px white;
+}
+
+.close {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgba(243, 239, 239, 0);
+    background-blend-mode: multiply;
+    background-image: url(images/menu3.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0.1rem;
+    right: 0rem;
+}
+
+.close:hover {
+    box-shadow: 0 0 2px 2px white
+}
+
+.divider {
+    z-index: 1000;
+}
+
+.cards img:hover {
+    background-color: black;
+    cursor: pointer;
+    z-index: 99;
+    transform: translateZ(0) translateX(-4%);
+    transition: transform 1s ease;
+}
+
+.site-footer {
+    width: 100vw;
+    height: 4.1rem;
+    background-color: grey;
+    margin: 0;
+    border: 0;
+    text-align: center;
+    font-size: 2vh;
+    margin-bottom: -1rem;
+    position: relative;
+    bottom:-2rem;
+}
+
+.progress-bar {
+    text-align: center;
+    animation: move 1s linear infinite
+}
+
+@keyframes move {
+    100% {
+        background-position: 50px 2px
+    }
+}
+
+#progress-bar1 {
+    text-align: center;
+    max-width: 34vw;
+    width: 25vw;
+    height: 4rem;
+}
+
+#progress-bar2 {
+    max-width: 35vw;
+    width: 25vw;
+    height: 4rem;
+}
+
+#progress-bar3 {
+    max-width: 37vw;
+    width: 25vw;
+    height: 4rem;
+}
+
+#progress-bar4 {
+    max-width: 31vw;
+    width: 25vw;
+    height: 4rem;
+}
+
+.progress {
+    height: 4vw;
+    max-height: 2.3rem;
+}
+
+.page-section-2 {
+    border: 0;
+    height: 23rem;
+    margin-top: .2rem;
+    background-color: grey;
+}
+
+.page-section-3 {
+    margin-top: 6rem;
+    background-color: rgb(212, 211, 211);
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-bottom: -2rem;
+
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.Facebook {
+    background-image: url(/images/facebook.png);
+    height: 2rem;
+    width: 2rem;
+    background-size: contain;
+    z-index: 100;
+    margin: 10px;
+    position: absolute;
+    right: 50%;
+    margin-top: 1.2rem;
+}
+
+.instagram {
+    background-image: url(/images/instagram.png);
+    height: 2rem;
+    width: 2rem;
+    background-size: contain;
+    margin: 10px;
+    position: absolute;
+    right: 43%;
+    margin-top: 1.2rem;
+}
+
+.twitter {
+    background-image: url(/images/twitter.png);
+    height: 2rem;
+    width: 2rem;
+    background-size: contain;
+    margin: 10px;
+    position: absolute;
+    right: 57%;
+    margin-top: 1.2rem;
+}
+
+.foot-con {
+    margin-right: 0rem
+}
+
+.page-section-card {
+    background-color: rgba(0, 0, 0, 0.63);
+    width: 100vw;
+}
+
+.CSS::after {
+    content: ' 75%';
+    white-space: pre;
+    font-size: 2vw;
+    padding-top: 0.1rem;
+    align-self: end;
+}
+
+.JS::after {
+    content: ' 70%';
+    white-space: pre;
+    font-size: 2vw;
+    padding-top: 0.1rem;
+    align-self: end;
+}
+
+.HTML::after {
+    content: ' 85%';
+    white-space: pre;
+    font-size: 2vw;
+    padding-top: 0.1rem;
+    align-self: end;
+}
+
+.Bootstrap::after {
+    white-space: pre;
+    content: "\00a0 65%";
+    font-size: 2vw;
+    padding-top: 0.1rem;
+    align-self: end;
+}
+
+
+.About-text {
+    height: 2.3rem;
+    width: 100vw;
+    margin-top: -1rem;
+    text-align: center;
+    font-size: 2rem;
+    top: 1rem;
+    font-family: 'satisfy'
+}
+
+.About-Text {
+    margin-top: 2rem;
+    padding-right: 2rem;
+}
+
+.about-img {
+    background-image: url(/images/DSC_0272_3.JPG);
+    background-size: contain;
+    background-position: center;
+    min-height: 24rem;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.918);
+    margin-top: .4rem;
+    opacity: .9/5;
+}
+
+.About-Me {
+    background-color: rgb(212, 211, 211);
+    margin-top: 1.1rem;
+}
+
+.page-section-2 h3 {
+    font-size: 2rem;
+    font-family: 'satisfy';
+    padding-top: 1rem;
+}
+
+.contact-section {
+    height: 75vh;
+}
+
+.contact-heading {
+    height: 2.3rem;
+    width: 100vw;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: 3rem;
+    font-family: 'satisfy'
+}
+
+.contact-Facebook {
+    height: 5rem;
+    background-size: 3rem;
+    background-image: url(/images/facebook.png);
+    height: 5rem;
+    width: 5rem;
+    background-size: contain;
+    margin: 2rem;
+}
+
+.contact-instagram {
+    height: 5rem;
+    background-size: 3rem;
+    background-image: url(/images/instagram.png);
+    height: 5rem;
+    width: 5rem;
+    background-size: contain;
+    margin: 2rem;
+}
+
+.contact-twitter {
+    height: 5rem;
+    background-size: 3rem;
+    background-image: url(/images/twitter.png);
+    height: 5rem;
+    width: 5rem;
+    background-size: contain;
+    margin: 2rem;
+}
+
+.contact-con {
+    margin-top: 15rem;
+}
+
+.get-in-touch {
+    font-size:5rem;
+    color: red;
+    padding-bottom: 5rem;
+}
+
+.page-section-card .Meaning {
+    height: 2.3rem;
+    width: 100vw;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'satisfy';
+    padding-top: 1rem;
+    color: white;
+    z-index: 100;
+}
+
+.page-section-card .card-title {
+    font-family: 'pacifico';
+    text-align: center
+}
+
+.overlay {
+    position:relative;
+    top:0rem;
+}
+
+.divider-2 {
+    width: 8rem;
+    height: 6px;
+    z-index: 9;
+    background-color: brown;
+    position: relative;
+    top:-2rem;
+    border-radius: 10rem;
+}
+.Skillset{
+    margin-bottom: 5rem;
+}
+
+.card-text{
+    color:rgba(255, 255, 255, 0.767)
+}
