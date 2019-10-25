@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="../Plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="../home.css">
+    <link href="../Plugins/pushbar.css" rel="stylesheet">
+    <script src="../Plugins/pushbar.js"></script>
+    <script src="../Plugins/popper.js"></script>
+    <script src="../Plugins/jquery.js"></script>
+    <script src="../Plugins/bootstrap.min.js"></script>
+
+
+</head>
+<h1>
+    Rock paper Scissors Game
+</h1>
+<style>
+    * {
+        box-sizing: border-box;
+        display: flexbox;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Display {
+        background-color: rgba(0, 0, 0, .7);
+        height: 7rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        max-width: 70%;
+        background: linear-gradient(to left, rgb(69, 71, 69), rgb(10, 10, 10));
+        margin-left: 17%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    h1 {
+        text-align: center;
+        font-family: cursive;
+
+    }
+    .b {
+    text-align: end;
+    color: white;
+    font-size: 1.2rem;
+    height: 2rem;
+    position: absolute;
+    top: 7.3rem;
+    left: 2.2rem;
+    font-family: cursive;
+    list-style: circle;
+}
+
+    body {
+        padding-top: 5rem;
+        background: linear-gradient(to right, rgb(114, 119, 105), rgba(124, 141, 48, 0.788))
+    }
+
+    .buttons {
+        position: absolute;
+        left: 30%;
+        right: 30%;
+        min-width: 50%;
+    }
+
+    button {
+
+        height: 4rem;
+        width: 7rem;
+        margin-top: 1rem;
+        background-color: rgb(59, 197, 82);
+        border: none;
+        border-radius: 1rem;
+        grid-template-rows: (repeat(3), 100px);
+        margin-left: 3rem
+    }
+
+    button:hover {
+        background-color: yellowgreen;
+
+    }
+
+    button:focus {
+        background-color: rgb(72, 230, 9);
+
+    }
+
+    .user-Display {
+        color: aliceblue;
+        margin-top: 1rem;
+        font-size: 1.44rem;
+        margin-right: 0.5rem;
+        font-family: cursive;
+
+
+    }
+
+    .comp-Display {
+        color: aliceblue;
+        margin: rem;
+        font-size: 1.44rem;
+        margin-right: 0.5rem;
+        font-family: cursive;
+    }
+
+    .winner {
+        color: aliceblue;
+        display: flex;
+        margin: rem;
+        font-size: 1.44rem;
+        margin-right: 0.5rem;
+        font-family: cursive;
+
+    }
+
+
+    .navbar {
+        width: 100%;
+        position: fixed;
+        z-index: 9;
+    }
+
+
+    .navbar {
+        height: 3.5rem;
+        width: 100%;
+        position: fixed;
+        z-index: 9;
+        top: 0rem;
+    }
+
+    .H {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        width: 18rem;
+        text-align: end;
+        padding-right: 1rem;
+        background-color: #343a40;
+        margin-left: auto;
+        position: relative;
+        top: -2rem;
+
+    }
+
+    .navbar-toggler {
+        top: -1.8rem;
+        border: none;
+        position: relative;
+        left: -4.5rem;
+        margin: none;
+
+    }
+
+    .navbar-toggler:hover {
+        background-color: inherit;
+        border: none;
+        margin: none;
+
+    }
+
+    .navbar-toggler:focus {
+        background-color: inherit;
+        border: none;
+        margin: none;
+
+
+
+    }
+
+    .main {
+        height: 2.5rem;
+        width: 2.5rem;
+        top: -1.7rem;
+        background-size: cover;
+        background-image: url(../images/menu1.png);
+        left: 0;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.164);
+        border: 0;
+        border-radius: 50%
+    }
+</style>
+
+<body>
+
+
+    <nav class="navbar bg-dark navbar-dark ">
+        <button data-pushbar-target="push" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="#" class="navbar-brand ">Clear<a href="#" class=" end  ">web</a>
+            <div class="icon"></div>
+            <button class="button main navbar-toggler " type="button" data-toggle="collapse" data-target="#options">
+
+            </button>
+
+            <div class=" ml-auto collapse navbar-collapse " id="options">
+                <ul class=" navbar-nav">
+
+                    <li class="nav-item "> <a class="nav-link" href="/Home.html">Home</a></li>
+
+                    <div class="dropdown">
+                        <li class="dropdown-toggle nav-item nav-link" data-toggle="dropdown">My Projects
+
+                        <li class="dropdown-menu two ">
+                            <a href="/Projects/Scientific calculator.html" class="dropdown-item">Caclulator</a>
+                            <a href="/Projects/rock paper scissors.html" class="dropdown-item">Rock paper scissors</a>
+                            <a href="/Projects/calender/January.html" class="dropdown-item">Calender </a>
+                        </li>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+    </nav>
+
+
+    <div data-pushbar-id="push" class="pushbar from_left d-flex text-align-center">
+        <ul>
+            <li class=" b" onclick="window.location.href='../Home.html'">Home</li>
+
+            <div class="dropdown c">
+
+                <li class="dropdown-toggle" data-toggle="dropdown">My Projects
+
+                <li class="dropdown-menu">
+
+                    <a href="/Projects/Scientific calculator.html" class="dropdown-item">Caclulator</a>
+                    <a href="/Projects/rock paper scissors.html" class="dropdown-item">Rock paper scissors</a>
+                    <a href="/Projects/calender/January.html" class="dropdown-item">Calender </a>
+                </li>
+                </li>
+            </div>
+            <div data-pushbar-close class="close btn"></div>
+        </ul>
+    </div>
+
+
+    <div class="Display">
+        <div data-user class="user-Display"> <em>user choice</em></div>
+        <div data-computer class="comp-Display"><em>computer choice</em></div>
+        <div data-winner class="winner"><em>Winner</em></div>
+    </div>
+    <div class="buttons">
+        <button data-string class="rock">Rock</button>
+        <button data-string class="paper">Paper</button>
+        <button data-string class="scissors">Scissors</button>
+    </div>
+    <script>
+
+        const Display1 = document.querySelector('[data-user]')
+        const Display2 = document.querySelector('[data-computer]')
+        const Display3 = document.querySelector('[data-winner]')
+        const Buttons = document.querySelectorAll('[data-string]')
+        class Game {
+            constructor(Display1, Display2, Display3) {
+                this.Display1 = Display1;
+                this.Display2 = Display2;
+                this.Display3 = Display3;
+
+            }
+
+            clear() {
+                Display1.innerText = "";
+                Display2.innerText = "";
+                Display3.innerText = "";
+            }
+
+
+            check() {
+                if (Display1.innerText === Display2.innerText)
+                    Display3.innerText = "No winner";
+
+                else if (Display1.innerText === "paper") {
+                    if (Display2.innerText === "rock") Display3.innerText = "User Wins"
+                    else if (Display2.innerText === "scissors") Display3.innerText = "Computer Wins"
+                }
+                else if (Display1.innerText === "rock") {
+                    if (Display2.innerText === "paper") Display3.innerText = "computer Wins"
+                    else if (Display2.innerText === "scissors") Display3.innerText = "User Wins"
+                }
+                else if (Display1.innerText === "scissors") {
+                    if (Display2.innerText === "rock") Display3.innerText = "Computer Wins"
+                    else if (Display2.innerText === "paper") Display3.innerText = "User Wins"
+                }
+            }
+
+
+
+            computerChoice() {
+                let variable = Math.ceil(Math.random() * 3)
+                switch (variable) {
+                    case 1: Display2.innerText = "rock";
+                        break;
+                    case 2: Display2.innerText = "paper";
+                        break;
+                    case 3: Display2.innerText = "scissors";
+                        break;
+                    default: "no value";
+                        break;
+
+                }
+            }
+        }
+
+
+        let game = new Game(Display1, Display2, Display3)
+
+        Buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                game.clear()
+                Display1.innerText = button.innerText.toLowerCase()
+                game.computerChoice(),
+                    game.check()
+
+            })
+        });
+
+        console.log(Math.ceil(Math.random() * 3))
+
+
+    </script>
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script>
+</body>
+
+</html>

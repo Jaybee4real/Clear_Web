@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Calculator</title>
+    <link rel="stylesheet" href="../Plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="../home.css">
+    <link href="../Plugins/pushbar.css" rel="stylesheet">
+    <script src="../Plugins/pushbar.js"></script>
+    <script src="../Plugins/popper.js"></script>
+    <script src="../Plugins/jquery.js"></script>
+    <script src="../Plugins/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark navbar-dark ">
+        <button data-pushbar-target="push" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="#" class="navbar-brand ">Clear<a href="#" class=" end  ">web</a>
+            <div class="icon"></div>
+            <button class="button main navbar-toggler " type="button" data-toggle="collapse" data-target="#options">
+
+            </button>
+
+            <div class=" ml-auto collapse navbar-collapse " id="options">
+                <ul class=" navbar-nav">
+
+                    <li class="nav-item "> <a class="nav-link" href="/Home.html">Home</a></li>
+
+                    <div class="dropdown">
+                        <li class="dropdown-toggle nav-item nav-link" data-toggle="dropdown">My Projects
+
+                        <li class="dropdown-menu two ">
+                            <a href="/Projects/Scientific calculator.html" class="dropdown-item">Caclulator</a>
+                            <a href="/Projects/rock paper scissors.html" class="dropdown-item">Rock paper scissors</a>
+                            <a href="/Projects/calender/January.html" class="dropdown-item">Calender </a>
+                        </li>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+    </nav>
+
+    <div data-pushbar-id="push" class="pushbar from_left d-flex text-align-center">
+        <ul>
+            <li class=" b"><a class="H" href="/Home.html">Home</a></li>
+
+            <div class="dropdown c">
+
+                <li class="dropdown-toggle" data-toggle="dropdown">My Projects
+
+                <li class="dropdown-menu">
+
+                    <a href="/Projects/Scientific calculator.html" class="dropdown-item">Caclulator</a>
+                    <a href="/Projects/rock paper scissors.html" class="dropdown-item">Rock paper scissors</a>
+                    <a href="/Projects/calender/January.html" class="dropdown-item">Calender </a>
+                </li>
+                </li>
+            </div>
+            <div data-pushbar-close class="close btn"></div>
+        </ul>
+    </div>
+
+    <div class="calculator">
+        <div class="Calc-display">
+            <div data-Display-1 class="Display-1"></div>
+            <div data-Display-2 class="Display-2"></div>
+        </div>
+        <button data-special class="square">√</button>
+        <button data-special class="special-btn ">log</button>
+        <button data-delete class="delete-button">DEL</button>
+        <button data-all-clear class="double-size">AC</button>
+        <button data-function class="function">*</button>
+        <button data-special class="tan">tan</button>
+        <button data-special class="sin">sin</button>
+        <button data-number class="number-button">1</button>
+        <button data-number class="number-button">2</button>
+        <button data-number class="number-button">3</button>
+        <button data-function class="function">-</button>
+        <button data-special class="special-btn"> cos </button>
+        <button data-special class="special-btn ">sin-1</button>
+        <button data-number class="number-button">4</button>
+        <button data-number class="number-button">5</button>
+        <button data-number class="number-button">6</button>
+        <button data-function class="function">÷</button>
+        <button data-special class="special-btn">3√</button>
+        <button data-special class="special-btn">cos-1</button>
+        <button data-number class="number-button">7</button>
+        <button data-number class="number-button">8</button>
+        <button data-number class="number-button">9</button>
+        <button data-function class="function">+</button>
+        <button data-special class="special-btn">tan-1</button>
+        <button data-special class="special-btn ">log10</button>
+
+        <button data-number class="number-button">0</button>
+        <button data-number class="number-button">.</button>
+        <button data-equals-function class="double-size">=</button>
+    </div>
+    <style>
+        body {
+            padding-top: 4rem;
+            background: linear-gradient(to right, rgb(69, 71, 69), rgb(70, 68, 68));
+            display: flex;
+            justify-content: center
+        }
+
+        .calculator {
+            margin-top: 7rem;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            padding-top: 7rem;
+            padding-right: 5rem;
+            padding-left: 5rem;
+            grid-template-rows: repeat(7, 150px);
+            grid-template-columns: repeat(6, 150px);
+            max-height: 100vh;
+            max-width: 100vh;
+            zoom: 60%;
+
+        }
+
+        .sin {
+            background-color: rgb(0, 128, 0, .5);
+
+
+        }
+
+        .end {
+            color: orangered;
+            position: fixed;
+            top: 0.1rem;
+            left: 10.3rem;
+            ;
+            font-size: 2rem;
+            font-style: bold;
+            font-weight: bolder;
+            z-index: 9;
+            background: none;
+        }
+
+
+        .special-btn {
+            background-color: rgb(0, 128, 0, .5);
+
+
+        }
+
+        .tan {
+            background-color: rgb(0, 128, 0, .5);
+
+
+
+
+        }
+
+        .square {
+            background-color: rgb(0, 128, 0, .5);
+
+        }
+
+
+        .Calc-display {
+            grid-column: span 6;
+            background-color: rgb(0, 0, 0, .55);
+            word-break: break-all;
+            word-wrap: break-word;
+            border-radius: 7px;
+
+        }
+
+        button {
+            cursor: pointer;
+            font-size: 2.4rem;
+            background-color: rgb(112, 109, 109)
+        }
+
+        button:hover {
+            background-color: rgb(255, 255, 255)
+        }
+
+        .Display-1 {
+            align-items: flex-end;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            padding: 10px;
+            font-size: 1.5rem;
+            color: rgb(177, 185, 172)
+        }
+
+        .Display-2 {
+            align-items: flex-end;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            padding: 10px;
+            font-size: 2.3rem;
+            color: rgba(255, 255, 255, .95)
+        }
+
+        .double-size {
+            background-color: rgb(210, 105, 30, .8);
+            grid-column: span 2;
+        }
+
+        .delete-button {
+            background-color: rgb(255, 0, 0, .7)
+        }
+
+        .function {
+            background-color: rgb(0, 0, 255, .6)
+        }
+
+        .navbar-brand {
+            font-size: 2rem;
+            font-style: bold;
+            font-weight: bold;
+            position: absolute;
+            top: 0.1rem;
+            padding-top: 0;
+            left: 5.3rem;
+        }
+
+        .navbar {
+            height: 3.5rem;
+            width: 100%;
+            position: fixed;
+            z-index: 9;
+            top: 0rem;
+        }
+
+        .H {
+            text-decoration: none;
+        }
+
+        .navbar-nav {
+            background-color: grey;
+            width: 18rem;
+            text-align: end;
+            padding: 1rem;
+            background-color: #343a40 !important;
+            margin-left: auto;
+
+        }
+
+        .main {
+            height: 2.5rem;
+            width: 2.5rem;
+            position: relative;
+            top: 0rem;
+            background-size: cover;
+            background-image: url(images/menu1.png);
+            left: 0;
+            background-blend-mode: multiply;
+            background-color: rgba(0, 0, 0, 0.164);
+            border: 0;
+            border-radius: 50%
+        }
+    </style>
+    <script>
+        class Calculator {
+            constructor(Display1, Display2) {
+                this.Display1 = Display1
+                this.Display2 = Display2
+            }
+
+            clear() {
+                this.Display1.innerText = ''
+                this.Display2.innerText = ''
+            }
+
+            delete() {
+                if (this.Display2.innerText === "")
+                    this.Display1.innerText =
+                        this.Display1.innerText.toString().slice(0, -1)
+                this.Display2.innerText = this.Display2.innerText.toString().slice(0, -1)
+
+            }
+            addNumbers(number) {
+                if (this.Display2.innerText.includes('.') && number === ".") return
+
+                this.Display2.innerText = this.Display2.innerText + number.toString()
+
+            }
+
+            calculate() {
+                if (Display1.innerText.includes('÷'))
+                    this.Display2.innerText = parseFloat(Display1.innerText) / parseFloat(Display2.innerText)
+                else if (Display1.innerText.includes('*'))
+                    this.Display2.innerText = parseFloat(Display1.innerText) * parseFloat(Display2.innerText)
+                else if (Display1.innerText.includes('+'))
+                    this.Display2.innerText = parseFloat(Display1.innerText) +
+                        parseFloat(Display2.innerText)
+                else if (Display1.innerText.includes('-'))
+                    this.Display2.innerText = parseFloat(Display1.innerText) - parseFloat(Display2.innerText)
+
+            }
+            finished() {
+                this.Display1.innerText = this.Display1.innerText + this.Display2.innerText + ' ='
+
+            }
+
+            check() {
+                if (this.Display1.innerText.includes('=')) return
+            }
+
+            choosefunction(parameter) {
+                var value = this.calculate()
+                if (Display1.innerText !== "" && Display2.innerText !== "") this.Display1.innerText = value
+                if (Display1.innerText.includes('*') && parameter === '*') return
+                this.Display1.innerText = this.Display2.innerText + parameter
+                this.Display2.innerText = ''
+            }
+
+            special(button) {
+                if (Display2.innerText === "") return
+                if (button === '√')
+                    this.Display2.innerText = Math.sqrt(parseFloat(Display2.innerText))
+                if (button === 'cos')
+                    this.Display2.innerText = Math.cos(parseFloat(Display2.innerText))
+                if (button === 'tan')
+                    this.Display2.innerText = Math.tan(parseFloat(Display2.innerText))
+                if (button === 'sin')
+                    this.Display2.innerText = Math.sin(parseFloat(Display2.innerText))
+
+                if (button === 'cos-1')
+                    this.Display2.innerText = Math.acos(Display2.innerText)
+
+                if (button === 'sin-1')
+                    this.Display2.innerText = Math.asin(Display2.innerText)
+
+                if (button === 'log10')
+                    this.Display2.innerText = Math.log10((Display2.innerText))
+                Mat
+                if (button === 'tan-1')
+                    this.Display2.innerText = Math.atan((Display2.innerText))
+
+                if (button === 'log')
+                    this.Display2.innerText = Math.log(parseFloat(Display2.innerText))
+            }
+
+        }
+
+        const Display1 = document.querySelector('[data-Display-1]')
+        const Display2 = document.querySelector('[data-Display-2]')
+        const Numbers = document.querySelectorAll('[data-number]')
+        const allClear = document.querySelector('[data-all-clear]')
+        const deleteButton = document.querySelector('[data-delete]')
+        const Functions = document.querySelectorAll('[data-function]')
+        const Equals = document.querySelector('[data-equals-function]')
+        const Special = document.querySelectorAll('[data-special]')
+
+
+        const calculator = new Calculator(Display1, Display2)
+        Numbers.forEach(button => {
+            button.addEventListener('click', () => {
+                calculator.addNumbers(button.innerText)
+            })
+        })
+        allClear.addEventListener('click', () => {
+            calculator.clear()
+        })
+
+        deleteButton.addEventListener('click', () => {
+            calculator.delete()
+        })
+        Functions.forEach(button => {
+            button.addEventListener('click', () => {
+                calculator.choosefunction(button.innerText)
+            })
+        })
+        Equals.addEventListener('click', () => {
+            if (Display1.innerText.includes('=')) return
+            calculator.finished()
+            calculator.calculate()
+        })
+        Special.forEach(button => {
+            button.addEventListener('click', () => {
+                calculator.special(button.innerText)
+            })
+        })
+        console.log("Hey,You are here,can u see any mistakes in my code?,or anywhere u can change the code to make it easier?")
+
+    </script>
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script>
+
+</body>
+
+</html>

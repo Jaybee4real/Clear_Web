@@ -1,0 +1,264 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+}
+
+.navbar {
+    height: 3.5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    top: 0rem;
+}
+
+.H {
+    text-decoration: none;
+}
+
+.navbar-nav {
+    width: 18rem;
+    text-align: end;
+    padding-right: 1rem;
+    background-color: #343a40;
+    margin-left: auto;
+    position: relative;
+}
+
+.navbar-toggler {
+
+    border: none;
+    position: relative;
+    margin: none;
+}
+
+.navbar-toggler:hover {
+    background-color: inherit;
+    border: none;
+    margin: none;
+    box-shadow: none;
+}
+
+.main {
+    height: 2.5rem;
+    width: 2.5rem;
+    top: -1.7rem;
+    background-size: cover;
+    background-image: url(../images/menu1.png);
+    left: 0;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.164);
+    border: 0;
+    border-radius: 50%
+}
+
+.facebook {
+    height: 8rem;
+    width: 8rem;
+    background-image: url(facebook.png);
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-blend-mode: multiply;
+    border-radius: 12%;
+    text-align: end
+}
+
+.name {
+    position: relative;
+    top: 6.9rem;
+    left: 7.5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: cursive;
+    background-image: url(/image_5.jpg);
+    background-color: rgb(248, 247, 237);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-main {
+    opacity: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 2.6rem;
+    color: rgb(222, 233, 75);
+    font-size: 2rem;
+    position: absolute;
+    text-align: center
+}
+
+h1 {
+    color: rgba(12, 19, 128, 0.705);
+    text-align: center;
+}
+
+button {
+    background-color: rgba(55, 59, 56, 0.637);
+    border: 2px solid rgba(0, 0, 5, 0.555);
+    color: aliceblue;
+    border-radius: 0.4rem;
+    text-align: start;
+    margin: 0.5px;
+    border-left: 2px solid rgba(72, 170, 250, 0.733);
+    border-bottom: 2px solid rgba(128, 218, 253, 0.5);
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+button:focus {
+    background-color: green;
+}
+
+button div {
+    font-size: 1rem
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(6, 75px);
+    grid-template-columns: repeat(7, 100px);
+    position: absolute;
+    left: 0.6rem;
+    top: 7rem;
+}
+
+.days {
+    background-color: rgba(163, 163, 245, 0.76);
+    width: 100px;
+    height: 30px;
+    padding: none;
+    margin: none;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 2.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px rgba(207, 183, 212, 0.603);
+}
+
+.container button {
+    padding-bottom: 3rem;
+}
+
+.container button div {
+    font-size: 0.7rem;
+    margin: 0.5rem solid white;
+}
+
+.container-2 {
+    display: grid;
+    height: 33rem;
+    width: 31rem;
+    background-color: rgba(75, 250, 90, 0.274);
+    position: absolute;
+    top: 6rem;
+    left: 47rem;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: repeat(2, 100px);
+}
+
+.container-2 .left-container {
+    display: grid;
+    position: absolute;
+}
+
+.container-2 .left-container button:hover {
+    background-color: inherit;
+    box-shadow: none;
+}
+
+.container-2 .right-container {
+    display: grid;
+    position: absolute;
+    right: -0.02rem;
+}
+
+.container-2 button {
+    background-color: rgba(124, 104, 238, 0.253);
+    width: 3.55rem;
+    height: 0.5rem;
+    border-radius: 0.3rem;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.container-2 .left-container button {
+    font-size: 0.8rem;
+}
+
+.container-2 button:hover {
+    background-color: rgb(67, 136, 21);
+    box-shadow: 0 0 10px rgb(207, 183, 212);
+    cursor: pointer;
+}
+
+.container-2 .right-container button {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+button:hover {
+    background-color: rgb(67, 136, 21);
+    box-shadow: 3px 3px 5px 2px rgb(207, 183, 212);
+    cursor: pointer;
+}
+
+.month {
+    background-color: rgba(83, 118, 148, 0.644);
+    width: 43.8rem;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(12, 12, 11);
+    height: 3rem;
+    left: 1rem;
+    position: absolute;
+    top: -0.5rem
+}
+
+.previous {
+    width: 4.5em;
+    height: 1.5em;
+    background-color: rgba(76, 85, 92, 0.568);
+    position: absolute;
+    left: 2rem;
+    top: 4.7rem;
+    border-radius: 0.6rem;
+    border: 1.5px solid rgb(173, 217, 253);
+    text-align: center;
+    color: #fff;
+}
+
+.previous:hover {
+    background-color: rgb(67, 136, 21);
+    box-shadow: 0 0 10px rgb(207, 183, 212);
+    cursor: pointer;
+}
+
+.next {
+    width: 3em;
+    height: 1.5em;
+    background-color: rgba(76, 92, 77, 0.568);
+    position: absolute;
+    top: 4.7rem;
+    left: 40rem;
+    border-radius: 0.6rem;
+    border: 1.5px solid rgb(173, 217, 253);
+    text-align: center;
+    color: #fff;
+}
+
+.next:hover {
+    background-color: rgb(67, 136, 21);
+    box-sizing: border-box_;
+    box-shadow: 0 0 10px rgb(207, 183, 212);
+    cursor: pointer;
+}
