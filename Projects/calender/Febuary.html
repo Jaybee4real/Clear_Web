@@ -25,38 +25,57 @@
 
     Jaybee's 2019 Calender </div>
 
-<body style="background-image:url(image_3.jpg)">
+<body style="background-image:url(image_3.jpg)"><div data-pushbar-id="push" class="pushbar from_left d-flex text-align-center">
+    <ul>
+        <li class=" b" onclick="window.location.href='../../Home.html'">Home</li>
 
-    <nav class="navbar bg-dark navbar-dark ">
-        <button data-pushbar-target="push" class="navbar-toggler">
-            <span class="navbar-toggler-icon"></span>
+        <div class="dropdown c">
+
+            <li class="dropdown-toggle" data-toggle="dropdown">My Projects
+
+            <li class="dropdown-menu">
+
+                <a href="../Scientific calculator.html" class="dropdown-item">Caclulator</a>
+                <a href="../rock paper scissors.html" class="dropdown-item">Rock paper scissors</a>
+                <a href="January.html" class="dropdown-item">Calender </a>
+            </li>
+            </li>
+        </div>
+        <div data-pushbar-close class="close btn"></div>
+    </ul>
+</div>
+
+
+<nav class="navbar bg-dark navbar-dark ">
+    <button data-pushbar-target="push" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a href="#" class="navbar-brand ">Clear<a href="#" class=" end  ">web</a>
+        <div class="icon"></div>
+        <button class="button main navbar-toggler " type="button" data-toggle="collapse" data-target="#options">
+
         </button>
-    
-        <a href="#" class="navbar-brand ">Clear<a href="#" class=" end  ">web</a>
-            <div class="icon"></div>
-            <button class="button main navbar-toggler " type="button" data-toggle="collapse" data-target="#options">
-    
-            </button>
-    
-            <div class=" ml-auto collapse navbar-collapse " id="options">
-                <ul class=" navbar-nav">
-    
-                    <li class="nav-item "> <a class="nav-link" href="/Home.html">Home</a></li>
-    
-                    <div class="dropdown">
-                        <li class="dropdown-toggle nav-item nav-link" data-toggle="dropdown">My Projects
-    
-                        <li class="dropdown-menu two ">
-                            <a href="/Projects/Scientific calculator.html" class="dropdown-item">Caclulator</a>
-                            <a href="/Projects/rock paper scissors.html" class="dropdown-item">Rock paper scissors</a>
-                            <a href="/Projects/calender/January.html" class="dropdown-item">Calender </a>
-                        </li>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-    
-    </nav>
+
+        <div class=" ml-auto collapse navbar-collapse " id="options">
+            <ul class=" navbar-nav">
+
+                <li class="nav-item "> <a class="nav-link" href="../../Home.html">Home</a></li>
+
+                <div class="dropdown">
+                    <li class="dropdown-toggle nav-item nav-link" data-toggle="dropdown">My Projects
+
+                    <li class="dropdown-menu two ">
+                        <a href="../Scientific calculator.html" class="dropdown-item">Caclulator</a>
+                        <a href="../rock paper scissors.html" class="dropdown-item">Rock paper scissors</a>
+                        <a href="January.html" class="dropdown-item">Calender </a>
+                    </li>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+</nav>
 
     <div class="previous" onclick="window.location.href='January.html'">previous</div>
     <div class="container">

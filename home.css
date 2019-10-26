@@ -1,3 +1,6 @@
+
+
+
 html {
     justify-content: center;
     width: 100%;
@@ -53,7 +56,7 @@ body {
 .icon {
     height: 2.3rem;
     width: 2.3rem;
-    background-image: url("/images/logo1.png");
+    background-image: url("images/logo1.png");
     background-size: contain;
     position: absolute;
     left: 14.3rem;
@@ -128,10 +131,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 30rem;
+    height: 90vh;
     background-image: url(images/backg.jpg);
-    background-color: rgba(36, 35, 35, 0.39);
+    background-color: rgba(36, 35, 35, 0.226);
     background-blend-mode: multiply;
+    animation: move 10s ;
 }
 
 .line {
@@ -262,16 +266,17 @@ body {
     font-size: 2vh;
     bottom: -2vw;
     position: relative;
+    z-index: 100;
 }
 
 .progress-bar {
     text-align: center;
-    animation: move 1s linear infinite
+    animation: move 12s linear infinite
 }
 
 @keyframes move {
-    100% {
-        background-position: 50px 2px
+    600% {
+        background-position: 50px 
     }
 }
 
@@ -326,7 +331,7 @@ a:hover {
 }
 
 .Facebook {
-    background-image: url(/images/facebook.png);
+    background-image: url(images/facebook.png);
     height: 2rem;
     width: 2rem;
     background-size: contain;
@@ -338,7 +343,7 @@ a:hover {
 }
 
 .instagram {
-    background-image: url(/images/instagram.png);
+    background-image: url(images/instagram.png);
     height: 2rem;
     width: 2rem;
     background-size: contain;
@@ -349,7 +354,7 @@ a:hover {
 }
 
 .twitter {
-    background-image: url(/images/twitter.png);
+    background-image: url(images/twitter.png);
     height: 2rem;
     width: 2rem;
     background-size: contain;
@@ -418,7 +423,7 @@ a:hover {
 }
 
 .about-img {
-    background-image: url(/images/DSC_0272_3.JPG);
+    background-image: url(images/DSC_0272_3.JPG);
     background-size: contain;
     background-position: center;
     min-height: 24rem;
@@ -452,7 +457,7 @@ a:hover {
 .contact-Facebook {
     height: 5rem;
     background-size: 3rem;
-    background-image: url(/images/facebook.png);
+    background-image: url(images/facebook.png);
     height: 5rem;
     width: 5rem;
     background-size: contain;
@@ -472,7 +477,7 @@ a:hover {
 .contact-instagram {
     height: 5rem;
     background-size: 3rem;
-    background-image: url(/images/instagram.png);
+    background-image: url(images/instagram.png);
     height: 5rem;
     width: 5rem;
     background-size: contain;
@@ -492,7 +497,7 @@ a:hover {
 .contact-twitter {
     height: 5rem;
     background-size: 3rem;
-    background-image: url(/images/twitter.png);
+    background-image: url(images/twitter.png);
     height: 5rem;
     width: 5rem;
     background-size: contain;
@@ -511,7 +516,7 @@ a:hover {
 
 .contact-whatsapp {
     background-size: 10rem;
-    background-image: url(/images/whatsapp.png);
+    background-image: url(images/whatsapp.png);
     height: 10rem;
     width: 10rem;
     background-size: contain;
@@ -533,7 +538,7 @@ a:hover {
 
 .contact-gmail {
     background-size: 7rem;
-    background-image: url(/images/gmail.png);
+    background-image: url(images/gmail.png);
     height: 7rem;
     width: 7rem;
     margin: 2rem;
@@ -553,7 +558,7 @@ a:hover {
 
 .contact-phone {
     background-size: 5rem;
-    background-image: url(/images/phone.png);
+    background-image: url(images/phone.png);
     height: 6rem;
     width: 6rem;
     margin: 2rem;
