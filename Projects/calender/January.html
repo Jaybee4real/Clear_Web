@@ -37,13 +37,13 @@
     <div data-pushbar-id="push" class="pushbar from_left d-flex text-align-center">
         <ul>
             <li class=" b" onclick="window.location.href='../../Home.html'">Home</li>
-    
+
             <div class="dropdown c">
-    
+
                 <li class="dropdown-toggle" data-toggle="dropdown">My Projects
-    
+
                 <li class="dropdown-menu">
-    
+
                     <a href="../Scientific calculator.html" class="dropdown-item">Caclulator</a>
                     <a href="../rock paper scissors.html" class="dropdown-item">Rock paper scissors</a>
                     <a href="January.html" class="dropdown-item">Calender </a>
@@ -369,6 +369,7 @@
 
     <script>
 
+
         Swal.fire({
             title: "Welcome to Jaybee's Calender",
             text: 'Double click on date to Add or Edit appointment',
@@ -376,11 +377,25 @@
             animation: "slide from top",
             confirmButtonText: 'proceed'
         })
-        
-       
+
+        let Proceed_btn = document.querySelectorAll("swal2-confirm")
+
+
+        Proceed_btn.addEventL('click', () => {
+
+            Swal.fire({
+                title: "Errrrrm...",
+                text: 'And you have to view it in Fullscreen Mode *whispers* I didnt Make it responsive',
+
+                animation: "slide from top",
+                confirmButtonText: 'proceed'
+            })
+        })
+
+
+
     </script>
-        <script type="text/javascript">
-        </script>
+   
 
 </body>
 

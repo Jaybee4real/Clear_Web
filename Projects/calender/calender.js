@@ -1,8 +1,3 @@
-     var pushbar = new Pushbar({
-                blur: true,
-                overlay: true,
-            });
-
 
 
 
@@ -34,6 +29,8 @@ let bttn25 = document.querySelector('[data-btn25]')
 let bttn26 = document.querySelector('[data-btn26]')
 let bttn27 = document.querySelector('[data-btn27]')
 let bttn28 = document.querySelector('[data-btn28]')
+
+
 
 
 let div2 = document.querySelector('[data-righ1]')
