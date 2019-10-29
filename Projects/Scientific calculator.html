@@ -25,8 +25,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a href="#" class="navbar-brand ">Clear<a href="#" class=" end  ">web</a>
-            <div class="icon"></div>
+        <a href="../Home.html" class="navbar-brand ">Clear<a href="../Home.html" class=" end  ">web</a>
+            <a href="../Home.html" class="icon"></a>
             <button class="button main navbar-toggler " type="button" data-toggle="collapse" data-target="#options">
 
             </button>
@@ -115,7 +115,7 @@
         }
 
         .calculator {
-            margin-top: 7rem;
+            margin-top: 5rem;
             display: grid;
             justify-content: center;
             align-content: center;
@@ -126,7 +126,7 @@
             grid-template-columns: repeat(6, 150px);
             max-height: 100vh;
             max-width: 100vh;
-            zoom: 60%;
+            zoom: 50%;
 
         }
 
@@ -312,7 +312,8 @@
             }
 
             check() {
-                if (this.Display1.innerText.includes('=')) return
+                if (this.Display1.innerText.includes('=')) 
+                Display1.innerText =""
             }
 
             choosefunction(parameter) {
@@ -327,6 +328,8 @@
                 if (Display2.innerText === "") return
                 if (button === '√')
                     this.Display2.innerText = Math.sqrt(parseFloat(Display2.innerText))
+                if (button === '3√')
+                    this.Display2.innerText = Math.cbrt(parseFloat(Display2.innerText))
                 if (button === 'cos')
                     this.Display2.innerText = Math.cos(parseFloat(Display2.innerText))
                 if (button === 'tan')
@@ -334,20 +337,22 @@
                 if (button === 'sin')
                     this.Display2.innerText = Math.sin(parseFloat(Display2.innerText))
 
-                if (button === 'cos-1')
-                    this.Display2.innerText = Math.acos(Display2.innerText)
-
-                if (button === 'sin-1')
-                    this.Display2.innerText = Math.asin(Display2.innerText)
+                if (button === 'log')
+                    this.Display2.innerText = Math.log(parseFloat(Display2.innerText))
 
                 if (button === 'log10')
                     this.Display2.innerText = Math.log10((Display2.innerText))
-                Mat
+
                 if (button === 'tan-1')
                     this.Display2.innerText = Math.atan((Display2.innerText))
 
-                if (button === 'log')
-                    this.Display2.innerText = Math.log(parseFloat(Display2.innerText))
+                if (button === 'cos-1')
+                    this.Display2.innerText = Math.cosh((Display2.innerText))
+
+                if (button === 'sin-1')
+                    this.Display2.innerText = Math.sinh((Display2.innerText))
+
+
             }
 
         }
@@ -384,6 +389,7 @@
             if (Display1.innerText.includes('=')) return
             calculator.finished()
             calculator.calculate()
+            check()
         })
         Special.forEach(button => {
             button.addEventListener('click', () => {

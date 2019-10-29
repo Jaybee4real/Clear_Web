@@ -1,12 +1,10 @@
-html {
-    justify-content: center;
+body {
     width: 100%;
     overflow-x: hidden;
 }
 
-body {
-    width: 100%;
-    white-space: none;
+html {
+    overflow-x: hidden;
 }
 
 .divider {
@@ -70,6 +68,15 @@ body {
     left: 5.3rem;
 }
 
+.big {
+    position: relative;
+    display: inline-flex;
+}
+
+.dropdown-menu .one {
+    left: 0rem;
+}
+
 .navbar {
     width: 100%;
     position: fixed;
@@ -80,12 +87,50 @@ body {
     text-align: end;
 }
 
+@media (max-width: 640px) {
+    .navbar .big {
+        display: none;
+    }
+   
+}
+
+@media (min-width: 640px) {
+    .main {
+        display: none;
+    }
+   
+}
+
+@media(max-width:400px) {
+    .contact-phrase {
+        display: none;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .navbar {
+        width: 100vw;
+    }
+    .About-text{
+        margin: .5rem;
+    }
+  
+}
+
+.nav-big {
+    color: rgba(245, 245, 245, 0.87);
+    cursor: pointer;
+}
+
+.nav-big:hover {
+    color: rgba(245, 245, 245, 0.288);
+}
+
 .end {
     color: orangered;
     position: fixed;
     top: 0.1rem;
     left: 10.3rem;
-    ;
     font-size: 2rem;
     font-style: bold;
     font-weight: bolder;
@@ -153,8 +198,6 @@ body {
     bottom: 1.3rem;
     margin: auto;
     cursor: pointer;
-
-
 }
 
 .scroll-icon {
@@ -172,7 +215,6 @@ body {
     animation: move 3s linear infinite;
     bottom: -5;
     margin: auto;
-
 }
 
 .line {
@@ -186,15 +228,15 @@ body {
 .main {
     height: 2.5rem;
     width: 2.5rem;
-    position: relative;
-    top: 0rem;
+    position: absolute;
+    top: .5rem;
     background-size: cover;
     background-image: url(images/menu1.png);
-    left: 0;
+    right: .5rem;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.164);
     border: 0;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .a {
@@ -301,14 +343,14 @@ body {
     border: 0;
     text-align: center;
     font-size: 2vh;
-    bottom: -2vw;
+    bottom: -2rem;
     position: relative;
     z-index: 100;
 }
 
 .progress-bar {
     text-align: center;
-    animation: move 12s linear infinite
+    animation: move 8s linear infinite;
 }
 
 @keyframes move {
@@ -345,11 +387,12 @@ body {
 .progress {
     height: 4vw;
     max-height: 2.3rem;
+    margin-bottom: 3rem;
 }
 
 .page-section-2 {
     border: 0;
-    height: 23rem;
+    height: 85vh;
     margin-top: .2rem;
     background-color: grey;
 }
@@ -450,12 +493,10 @@ a:hover {
     text-align: center;
     font-size: 2rem;
     top: 1rem;
-    font-family: 'satisfy'
-}
-
-.About-Text {
+    font-family: 'satisfy';
     margin-top: 2rem;
     padding-right: 2rem;
+    margin-right: 3rem;
 }
 
 .about-img {
@@ -637,7 +678,7 @@ a:hover {
     font-weight: bold;
     font-size: 2.2rem;
     text-align: center;
-    font-style:italic
+    font-style: italic
 }
 
 .overlay {
@@ -659,7 +700,7 @@ a:hover {
     margin-bottom: 5rem;
 }
 
-.card-text {
+.-text {
     color: rgba(255, 255, 255, 0.767)
 }
 
@@ -670,4 +711,8 @@ a:hover {
     font-size: 2.5rem;
     font-family: 'satisfy';
     margin-left: 40vw;
+}
+
+.card-text {
+    color: rgba(216, 213, 187, 0.733);
 }
