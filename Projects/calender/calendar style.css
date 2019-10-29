@@ -3,7 +3,9 @@
     position: fixed;
     z-index: 9;
 }
-
+.main{
+    opacity: 0;
+}
 .navbar {
     height: 3.5rem;
     width: 100%;
