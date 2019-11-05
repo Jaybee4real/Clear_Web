@@ -7498,6 +7498,7 @@ bttn26.addEventListener('dblclick', () => {
         btn26Div4.innerText = day26counter - 2 + " more"
         rightbox10.innerText = day26[day26counter]
     }
+    
 
 
     else if (day26counter === 10 && rightbox11.innerText === "") {

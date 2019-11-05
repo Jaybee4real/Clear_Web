@@ -151,8 +151,12 @@ button div {
 }
 
 .container button div {
+    margin: 0rem;
+    padding: 0rem;
     font-size: 0.7rem;
-    margin: 0.5rem solid white;
+   max-height: .75rem;
+   border-radius: 10%;
+   text-align: center;
 }
 
 .container-2 {

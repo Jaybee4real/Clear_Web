@@ -179,7 +179,7 @@ html {
     background-color: rgba(36, 35, 35, 0.226);
     background-blend-mode: multiply;
     animation: move 10s;
-    background-attachment: fixed;
+
 }
 
 .name {

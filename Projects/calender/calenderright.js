@@ -751,17 +751,17 @@ rightbutton4.addEventListener('click', () => {
         day2[4] = prm
         rightbox4.innerText = day2[4];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[4]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[4]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[4]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[4]
 
-        } else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[4]
+        } else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[4]
 
-        } else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[4]
+        } else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[4]
 
         }
 
@@ -1331,17 +1331,17 @@ rightbutton5.addEventListener('click', () => {
         day2[5] = prm
         rightbox5.innerText = day2[5];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[5]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[5]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[5]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[5]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[5]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[5]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[5]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[5]
 
         } 
 
@@ -1911,17 +1911,17 @@ rightbutton6.addEventListener('click', () => {
         day2[6] = prm
         rightbox6.innerText = day2[6];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[6]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[6]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[6]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[6]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[6]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[6]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[6]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[6]
 
         } 
 
@@ -2490,17 +2490,17 @@ rightbutton7.addEventListener('click', () => {
         day2[7] = prm
         rightbox7.innerText = day2[7];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[7]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[7]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[7]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[7]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[7]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[7]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[7]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[7]
 
         } 
 
@@ -3070,17 +3070,17 @@ rightbutton8.addEventListener('click', () => {
         day2[8] = prm
         rightbox8.innerText = day2[8];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[8]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[8]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[8]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[8]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[8]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[8]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[8]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[8]
 
         } 
 
@@ -3650,17 +3650,17 @@ rightbutton9.addEventListener('click', () => {
         day2[9] = prm
         rightbox9.innerText = day2[9];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[9]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[9]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[9]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[9]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[9]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[9]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[9]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[9]
 
         } 
 
@@ -4230,17 +4230,17 @@ rightbutton10.addEventListener('click', () => {
         day2[10] = prm
         rightbox10.innerText = day2[10];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[10]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[10]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[10]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[10]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[10]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[10]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[10]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[10]
 
         } 
 
@@ -4810,17 +4810,17 @@ rightbutton11.addEventListener('click', () => {
         day2[11] = prm
         rightbox11.innerText = day2[11];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[11]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[11]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[11]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[11]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[11]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[11]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[11]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[11]
 
         } 
 
@@ -5390,17 +5390,17 @@ rightbutton12.addEventListener('click', () => {
         day2[12] = prm
         rightbox12.innerText = day2[12];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[12]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[12]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[12]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[12]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[12]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[12]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[12]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[12]
 
         } 
 
@@ -5970,17 +5970,17 @@ rightbutton13.addEventListener('click', () => {
         day2[13] = prm
         rightbox13.innerText = day2[13];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[13]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[13]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[13]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[13]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[13]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[13]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[13]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[13]
 
         } 
 
@@ -6550,17 +6550,17 @@ rightbutton14.addEventListener('click', () => {
         day2[14] = prm
         rightbox14.innerText = day2[14];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[14]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[14]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[14]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[14]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[14]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[14]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[14]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[14]
 
         } 
 
@@ -7130,17 +7130,17 @@ rightbutton15.addEventListener('click', () => {
         day2[15] = prm
         rightbox15.innerText = day2[15];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[15]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[15]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[15]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[15]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[15]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[15]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[15]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[15]
 
         } 
 
@@ -7710,17 +7710,17 @@ rightbutton16.addEventListener('click', () => {
         day2[16] = prm
         rightbox16.innerText = day2[16];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[16]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[16]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[16]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[16]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[16]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[16]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[16]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[16]
 
         } 
 
@@ -8290,17 +8290,17 @@ rightbutton17.addEventListener('click', () => {
         day2[17] = prm
         rightbox17.innerText = day2[17];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[17]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[17]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[17]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[17]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[17]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[17]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[17]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[17]
 
         } 
 
@@ -8870,17 +8870,17 @@ rightbutton18.addEventListener('click', () => {
         day2[18] = prm
         rightbox18.innerText = day2[18];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[18]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[18]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[18]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[18]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[18]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[18]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[18]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[18]
 
         } 
 
@@ -9450,17 +9450,17 @@ rightbutton19.addEventListener('click', () => {
         day2[19] = prm
         rightbox19.innerText = day2[19];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[19]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[19]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[19]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[19]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[19]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[19]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[19]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[19]
 
         } 
 
@@ -10030,17 +10030,17 @@ rightbutton20.addEventListener('click', () => {
         day2[20] = prm
         rightbox20.innerText = day2[20];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[20]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[20]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[20]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[20]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[20]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[20]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[20]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[20]
 
         } 
 
@@ -10610,17 +10610,17 @@ rightbutton21.addEventListener('click', () => {
         day2[21] = prm
         rightbox21.innerText = day2[21];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[21]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[21]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[21]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[21]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[21]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[21]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[21]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[21]
 
         } 
 
@@ -11190,17 +11190,17 @@ rightbutton22.addEventListener('click', () => {
         day2[22] = prm
         rightbox22.innerText = day2[22];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[22]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[22]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[22]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[22]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[22]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[22]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[22]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[22]
 
         } 
 
@@ -11770,17 +11770,17 @@ rightbutton23.addEventListener('click', () => {
         day2[23] = prm
         rightbox23.innerText = day2[23];
 
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day2[23]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day2[23]
         }
-        else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day2[23]
+        else if (btn2Div1 !== "") {
+            btn2Div2.innerText = day2[23]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[23]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[23]
 
-        }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day2[23]
+        }else if (btn2Div2 !== "") {
+            btn2Div3.innerText = day2[23]
 
         } 
 
@@ -12326,17 +12326,17 @@ rightbutton24.addEventListener('click', () => {
     if (infocus === day1) {
         day1[24] = prm
         rightbox24.innerText = day1[24];
-        if (btn1Div1.innerText === "") {
-            btn1Div1.innerText = day1[24]
+        if (btn2Div1.innerText === "") {
+            btn2Div1.innerText = day1[24]
         }
         else if (btn1Div1 !== "") {
-            btn1Div2.innerText = day1[24]
+            btn2Div2.innerText = day1[24]
 
         }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day1[24]
+            btn2Div3.innerText = day1[24]
 
         }else if (btn1Div2 !== "") {
-            btn1Div3.innerText = day1[24]
+            btn2Div3.innerText = day1[24]
 
         } 
 
