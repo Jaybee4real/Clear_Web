@@ -91,14 +91,12 @@ html {
     .navbar .big {
         display: none;
     }
-   
 }
 
 @media (min-width: 640px) {
     .main {
         display: none;
     }
-   
 }
 
 @media(max-width:400px) {
@@ -111,10 +109,12 @@ html {
     .navbar {
         width: 100vw;
     }
-    .About-text{
+    .About-text {
         margin: .5rem;
     }
-  
+    .scroll{
+        display:none
+    }
 }
 
 .nav-big {
@@ -179,8 +179,11 @@ html {
     background-color: rgba(36, 35, 35, 0.226);
     background-blend-mode: multiply;
     animation: move 10s;
-
 }
+/* .page-section-first{
+    height: 0vh
+} */
+
 
 .name {
     color: orangered;
@@ -240,6 +243,7 @@ html {
 }
 
 .a {
+    border-bottom: 1px solid white;
     text-align: end;
     color: white;
     font-size: 1.2rem;
@@ -248,9 +252,11 @@ html {
     top: 5.4rem;
     font-family: cursive;
     list-style: circle;
+    margin-bottom: 5rem;
 }
 
 .b {
+    border-bottom: 1px solid white;
     text-align: end;
     color: white;
     font-size: 1.2rem;
@@ -263,6 +269,7 @@ html {
 }
 
 .c {
+    border-bottom: 1px solid white;
     padding-bottom: 10px;
     color: white;
     font-size: 1.2rem;
@@ -344,7 +351,6 @@ html {
     text-align: center;
     font-size: 2vh;
     bottom: -2rem;
-    position: relative;
     z-index: 100;
 }
 
@@ -361,19 +367,19 @@ html {
 
 #progress-bar1 {
     text-align: center;
-    max-width: 34vw;
+    max-width: 33.5vw;
     width: 25vw;
     height: 4rem;
 }
 
 #progress-bar2 {
-    max-width: 35vw;
+    max-width: 35.5vw;
     width: 25vw;
     height: 4rem;
 }
 
 #progress-bar3 {
-    max-width: 37vw;
+    max-width: 36vw;
     width: 25vw;
     height: 4rem;
 }
@@ -384,8 +390,19 @@ html {
     height: 4rem;
 }
 
+#progress-bar5 {
+    max-width: 40vw;
+    width: 31vw;
+    height: 4rem;
+}
+
+#progress-bar6 {
+    max-width: 31vw;
+    width: 31vw;
+    height: 4rem;
+}
 .progress {
-    height: 4vw;
+    height: 3vw;
     max-height: 2.3rem;
     margin-bottom: 3rem;
 }
@@ -393,6 +410,7 @@ html {
 .page-section-2 {
     border: 0;
     height: 85vh;
+    min-height: 20rem;
     margin-top: .2rem;
     background-color: grey;
 }
@@ -402,6 +420,7 @@ html {
     padding: 0;
     margin: 0;
     border: 0;
+    margin-top:2rem;
     margin-bottom: -1.1rem;
 }
 
@@ -409,39 +428,6 @@ a:hover {
     cursor: pointer;
 }
 
-.Facebook {
-    background-image: url(images/facebook.png);
-    height: 2rem;
-    width: 2rem;
-    background-size: contain;
-    z-index: 100;
-    margin: 10px;
-    position: absolute;
-    right: 50%;
-    margin-top: 1.2rem;
-}
-
-.instagram {
-    background-image: url(images/instagram.png);
-    height: 2rem;
-    width: 2rem;
-    background-size: contain;
-    margin: 10px;
-    position: absolute;
-    right: 40%;
-    margin-top: 1.2rem;
-}
-
-.twitter {
-    background-image: url(images/twitter.png);
-    height: 2rem;
-    width: 2rem;
-    background-size: contain;
-    margin: 10px;
-    position: absolute;
-    right: 59%;
-    margin-top: 1.2rem;
-}
 
 .foot-con {
     margin-right: 0rem;
@@ -478,6 +464,20 @@ a:hover {
 }
 
 .Bootstrap::after {
+    white-space: pre;
+    content: "\00a0 65%";
+    font-size: 2vw;
+    padding-top: 0.1rem;
+    align-self: end;
+}
+.jquery::after {
+    white-space: pre;
+    content: "\00a0 90%";
+    font-size: 2vw;
+    padding-top: 0.1rem;
+    align-self: end;
+}
+.react::after {
     white-space: pre;
     content: "\00a0 65%";
     font-size: 2vw;
@@ -551,10 +551,10 @@ a:hover {
     cursor: pointer;
 }
 
-.contact-instagram {
+.contact-linked-in {
     height: 5rem;
     background-size: 3rem;
-    background-image: url(images/instagram.png);
+    background-image: url(images/Linked-in.webp);
     height: 5rem;
     width: 5rem;
     background-size: contain;
@@ -562,8 +562,8 @@ a:hover {
     cursor: pointer;
 }
 
-.contact-instagram::after {
-    content: 'Jaybee_4_sure';
+.contact-linked-in::after {
+    content: 'Okoroji\00a0 Faith';
     font-family: cursive;
     position: relative;
     bottom: -6rem;

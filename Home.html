@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Clear-web | portfolio</title>
+    <link rel="icon" href="images/logo1.png">
     <link rel="stylesheet" href="Plugins/bootstrap.min.css">
     <link rel="stylesheet" href="home.css">
     <link href="Plugins/pushbar.css" rel="stylesheet">
@@ -26,7 +27,7 @@
 <body class="" onload="load_bar()">
 
 
-    <div  data-pushbar-id="push" class="pushbar from_left d-flex text-align-center">
+    <div data-pushbar-id="push" class="pushbar from_left d-flex text-align-center">
         <ul>
             <li id="about-btn" class=" a">About me </li>
             <li class=" b" id="contact-btn"> contact me </li>
@@ -58,11 +59,12 @@
 
         <a href="Home.html" class="navbar-brand ">Clear<a href="Home.html" class=" end  ">web</a>
             <a href="Home.html" class="icon"></a>
-        
+
 
             <div class="big  ">
                 <div class="dropdown">
-                    <li data-aos="fade-left" data-aos-delay="200" class="dropdown-toggle nav-item nav-link nav-big" data-toggle="dropdown">About
+                    <li data-aos="fade-left" data-aos-delay="200" class="dropdown-toggle nav-item nav-link nav-big"
+                        data-toggle="dropdown">About
 
                     <li class="dropdown-menu one ">
                         <a class="dropdown-item " id="about-btn">Short - Bio</a>
@@ -79,7 +81,8 @@
 
                 <div class="dropdown">
 
-                    <li data-aos="fade-left" data-aos-delay="500"  class="dropdown-toggle nav-item nav-link nav-big" data-toggle="dropdown">My Projects
+                    <li data-aos="fade-left" data-aos-delay="500" class="dropdown-toggle nav-item nav-link nav-big"
+                        data-toggle="dropdown">My Projects
 
                     <li class="dropdown-menu one">
                         <a href="Projects/Scientific calculator.html" class="dropdown-item">Caclulator</a>
@@ -89,17 +92,18 @@
                     </li>
                 </div>
 
-                <div data-aos="fade-left" data-aos-delay="1000"  class="nav-big " id="contact-btn">
+                <div data-aos="fade-left" data-aos-delay="1000" class="nav-big " id="contact-btn">
                     <a class=" nav-item nav-link  ">Contact me</a>
                 </div>
 
             </div>
 
-                <button data-aos="fade-left"  data-aos-delay="200" class="button main navbar-toggler  " type="button" data-toggle="collapse" data-target="#options">
-                
-                </button>
+            <button data-aos="fade-left" data-aos-delay="200" class="button main navbar-toggler  " type="button"
+                data-toggle="collapse" data-target="#options">
 
-            <div  class="collapse navbar-collapse options" id="options">
+            </button>
+
+            <div class="collapse navbar-collapse options" id="options">
                 <ul class=" navbar-nav">
 
 
@@ -117,7 +121,8 @@
                     <li class="nav-item "> <a class="nav-link" id="contact-btn">Contact Me</a></li>
 
                     <div class="dropdown">
-                        <li data-aos="fade-left"  class="dropdown-toggle nav-item nav-link" data-toggle="dropdown">My Projects
+                        <li data-aos="fade-left" class="dropdown-toggle nav-item nav-link" data-toggle="dropdown">My
+                            Projects
 
                         <li class="dropdown-menu two ">
                             <a href="Projects/Scientific calculator.html" class="dropdown-item">Caclulator</a>
@@ -130,9 +135,9 @@
             </div>
     </nav>
 
-    <section data-aos="fade-left">
+    <section class="heading page-section-first"data-aos="fade-left">
 
-        <div class="heading d-flex justify-content-center ">
+        <div class=" d-flex justify-content-center ">
             <div class="first-circle ">
                 <div class="image"></div>
                 <div></div>
@@ -251,7 +256,7 @@
         </div>
 
         <div class="row justify-content-space-between px-4">
-            <div data-aos="fade-left" data-aos-delay="200" class="bar-container col-6">
+            <div data-aos="fade-left" data-aos-delay="200" class="bar-container col-6 col-sm-12">
                 Javascript
                 <div class="progress JS ">
                     <div class="progress-bar progress-bar-striped text-align-center" id="progress-bar1"
@@ -281,6 +286,23 @@
                 Bootstrap
                 <div class="progress Bootstrap">
                     <div class="progress-bar progress-bar-striped " id="progress-bar4" role="progressbar"
+                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="60" style="width: 60">
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-right" data-aos-delay="400" class="bar-container col-6 ">
+                J-Query
+                <div class="progress jquery">
+                    <div class="progress-bar progress-bar-striped " id="progress-bar5" role="progressbar"
+                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="60" style="width: 60">
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400" class="bar-container col-6 ">
+                React
+                <div class="progress react">
+                    <div class="progress-bar progress-bar-striped " id="progress-bar6" role="progressbar"
                         aria-valuenow="0" aria-valuemin="0" aria-valuemax="60" style="width: 60">
                     </div>
                 </div>
@@ -391,8 +413,8 @@
                 class=" contact-Facebook" data-aos-delay="1200"></a>
 
 
-            <a href="https://instagram.com/jaybee_4_sure" data-aos="fade-right" data-aos-delay="1500"
-                data-aos-duration="500" class=" contact-instagram "></a>
+            <a href="https://linkedin.com/okoroji-faith" data-aos="fade-right" data-aos-delay="1500"
+                data-aos-duration="500" class=" contact-linked-in "></a>
 
 
             <a data-aos="fade-right" data-aos-delay="1800" data-aos-duration="500" class="contact-twitter"
@@ -432,17 +454,20 @@
 
         <script>
 
-
+            var body = document.querySelector('body')
             var abt_button = document.querySelectorAll('#about-btn')
             cont_btn = document.querySelectorAll("#contact-btn")
             var bar1 = document.getElementById("progress-bar1")
             var bar2 = document.getElementById("progress-bar2")
             var bar3 = document.getElementById("progress-bar3")
             var bar4 = document.getElementById("progress-bar4")
+            var bar5 = document.getElementById("progress-bar5")
+            var bar6 = document.getElementById("progress-bar6")
             var mission_btn = document.querySelectorAll(".mission-btn")
             var Skill_btn = document.querySelectorAll(".skill")
 
-
+            
+            
             let bar = 0
             var Scroll_btn = document.querySelector('.scroll')
 
@@ -461,6 +486,8 @@
                         bar2.style.width = bar + "%";
                         bar3.style.width = bar + "%";
                         bar4.style.width = bar + "%";
+                        bar5.style.width = bar + "%";
+                        bar6.style.width = bar + "%";
                     }
 
                 }, 120)
@@ -479,7 +506,7 @@
 
             $(abt_button).click(function () {
                 $('html,body').animate({
-                    scrollTop: $(".About-Me").offset().top- 50
+                    scrollTop: $(".About-Me").offset().top - 50
                 }, 2000);
             })
 
@@ -506,8 +533,6 @@
                     scrollTop: $(".Skillset").offset().top - 60
                 }, 2000);
             })
-
-  
 
         </script>
 
