@@ -91,6 +91,11 @@ html {
     .navbar .big {
         display: none;
     }
+    .mission{
+        margin-bottom: 1.2rem;
+
+    }
+   
 }
 
 @media (min-width: 640px) {
@@ -115,6 +120,14 @@ html {
     .scroll{
         display:none
     }
+}
+.page-section-mission{
+    background-color: rgb(212, 211, 211);
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-top:2rem;
+    margin-bottom: -1.1rem;
 }
 
 .nav-big {
@@ -180,9 +193,7 @@ html {
     background-blend-mode: multiply;
     animation: move 10s;
 }
-/* .page-section-first{
-    height: 0vh
-} */
+
 
 
 .name {
@@ -415,14 +426,7 @@ html {
     background-color: grey;
 }
 
-.page-section-3 {
-    background-color: rgb(212, 211, 211);
-    padding: 0;
-    margin: 0;
-    border: 0;
-    margin-top:2rem;
-    margin-bottom: -1.1rem;
-}
+
 
 a:hover {
     cursor: pointer;
@@ -448,7 +452,7 @@ a:hover {
 }
 
 .JS::after {
-    content: ' 70%';
+    content: '  70%';
     white-space: pre;
     font-size: 2vw;
     padding-top: 0.1rem;
@@ -705,13 +709,17 @@ a:hover {
 }
 
 .mission {
+    position: relative;
     height: 2.3rem;
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
     font-family: 'satisfy';
-    margin-left: 40vw;
+    margin-left: auto ;
+    margin-right:auto;
+    margin-bottom:1.2rem
 }
+
 
 .card-text {
     color: rgba(216, 213, 187, 0.733);

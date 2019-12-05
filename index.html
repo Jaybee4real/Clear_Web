@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redirecting...</title>
+    <link rel="stylesheet" href="./Plugins/bootstrap.min.css">
+    <script src="./Plugins/bootstrap.min.js"></script>
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, rgb(125, 141, 125), rgb(117, 114, 114));
+    }
+
+    .middle {
+        position: relative;
+        top: 30vh;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: large;
+        font-family: monospace;
+    }
+
+    .redirect {
+        position: relative;
+        top: 35vh;
+        width: 50vw;
+        left: 25vw;
+
+    }
+    .middle .ps{
+        margin-left: 20vw;
+        font-size:.7rem
+    }
+</style>
+
+<body onload="load_bar()">
+
+    <div class="middle">
+        This Page Is Redirecting To The Home Page ,Please Wait...
+
+        <div class="ps">
+            Ps: this page is not fully optimized for mobile view
+        </div>
+    </div>
+    <div class="progress redirect">
+        <div class="progress-bar progress-bar-striped text-align-center" id="progress-bar1" role="progressbar">
+        </div>
+
+        <script>
+            let bar1 = document.getElementById("progress-bar1");
+            let bar = 0
+
+            function load_bar() {
+
+                window.setInterval(function () {
+
+                    bar += 5
+                    if (bar === 60) {
+                        return
+                        clearInterval();
+
+                    }
+                    else {
+                        bar1.style.width = bar + "%";
+                    }
+
+                }, 120)
+
+            }
+
+            window.setTimeout(function redirect() {
+                window.location.replace("http://clear-web.000webhostapp.com/Clear-web/home.html")
+            }, 3000);
+
+
+        </script>
+</body>
+
+</html>
